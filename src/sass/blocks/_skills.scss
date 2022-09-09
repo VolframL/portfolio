@@ -1,0 +1,114 @@
+.skills {
+  padding-top: 120px;
+
+  .devider {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    background-color: $main-color;
+    width: 60px;
+    height: 3px;
+
+  }
+
+  &__subtitle {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 270px);
+    // grid-auto-flow: column;
+    gap: 13px;
+
+    li {
+      padding: 35px 35px 25px 35px;
+      border: 1px solid black;
+    }
+  }
+
+  &__item {
+    &-img {
+      height: 65px;
+
+      img {
+        max-width: 200px;
+        height: 100%;
+      }
+    }
+
+    &-heading {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    &-descr {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__visualisation {
+    padding-top: 120px;
+
+    &-items {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(2, 70px);
+      gap: 45px;
+
+      li {
+        position: relative;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-heading {
+      position: relative;
+      padding-left: 14px;
+      @include before_circle;
+
+    }
+
+    &-graph {
+      margin-top: 20px;
+      background-color: #E8E4DE;
+      border-radius: 4px;
+      height: 14px;
+      width: 100%;
+
+      span {
+        transition: all 1s;
+        position: absolute;
+        top: 52.5px;
+        background-color: $main-color;
+        border-radius: 4px;
+        height: 14px;
+        width: 0px;
+      }
+    }
+
+
+  }
+}
