@@ -11,22 +11,6 @@
 
     }
 
-    &__subtitle {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    &__title {
-        text-align: center;
-    }
-
     &__wrapper {
         padding-left: 65px;
         display: grid;
@@ -77,7 +61,7 @@
             content: '';
             height: 1px;
             width: 43px;
-            top: 50px;
+            top: 44px;
             position: absolute;
             background-color: black;
         }

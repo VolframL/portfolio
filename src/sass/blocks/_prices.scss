@@ -1,0 +1,24 @@
+.prices {
+  padding-top: 60px;
+
+  .devider {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 60px;
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    width: 370px;
+    margin: 0 50px 0 50px;
+  }
+
+  &__item {
+    display: flex;
+  }
+}

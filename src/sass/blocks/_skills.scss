@@ -11,21 +11,6 @@
 
   }
 
-  &__subtitle {
-    position: relative;
-    text-align: center;
-    @include before_circle;
-
-    &:before {
-      top: -6px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  &__title {
-    text-align: center;
-  }
 
   &__wrapper {
     list-style-type: none;
