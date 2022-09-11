@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 120px;
+  min-height: 600px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 68px;
+  }
+
+  &__info {
+    margin-top: 5px;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-left: 15px;
+    @include before_circle;
+  }
+
+  &__title {
+    padding-top: 5px;
+  }
+
+  &__social {
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+
+    &:first-child {
+      transform: rotate(90deg);
+    }
+  }
+}

@@ -19,6 +19,41 @@
   }
 
   &__item {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    @include before_circle;
+
+    &:before {
+      width: 15px;
+      height: 15px;
+      top: 3px;
+    }
+
+
+    &-title {
+      font-size: 14px;
+      font-weight: 900;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+
+    &-price {
+      font-size: 14px;
+      font-weight: 700;
+      grid-row: 1 / 2;
+      grid-column: 2 / 2;
+      justify-self: end;
+    }
+
+    &-descr {
+      font-size: 12px;
+      font-weight: 500;
+      grid-row: 2 / 2;
+      grid-column: 1 / 3;
+    }
   }
 }
