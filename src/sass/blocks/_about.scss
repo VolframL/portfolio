@@ -55,6 +55,7 @@
     @include before_circle;
 
     img {
+      background-color: transparent;
       position: absolute;
       left: 15px;
       top: 15px;

@@ -1,4 +1,5 @@
 .sidepanel {
+
   position: fixed;
   top: 230px;
   left: 50px;
@@ -8,22 +9,71 @@
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  transition: all 1s;
+
   &__devider {
+
     height: 70px;
     width: 2px;
     background: black;
+    margin-bottom: 20px;
   }
+
   &__text {
     width: 25px;
     height: 150px;
+
     span {
-      color: #000;
+      color: black;
       font-weight: bold;
       display: block;
       width: 150px;
-      transform: 
-        rotate(-90deg)
-        translate(-30%, -260%);
+      transform:
+        rotate(-90deg) translate(-30%, -260%);
+    }
+  }
+
+  &.hide {
+    left: -50px;
+  }
+}
+
+
+
+.sidepanel-white {
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 7;
+
+  svg {
+    fill: white;
+  }
+
+  &__devider {
+
+    height: 70px;
+    width: 2px;
+    background: white;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 25px;
+    height: 150px;
+
+    span {
+      color: white;
+      font-weight: bold;
+      display: block;
+      width: 150px;
+      transform:
+        rotate(-90deg) translate(-30%, -260%);
     }
   }
 }

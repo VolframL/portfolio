@@ -131,6 +131,19 @@ content="icons/favicon//ms-icon-144x144.png"
 <div class="sidepanel__devider"></div>
 <div class="sidepanel__text"><span>Соціальні мережі</span></div>
 </aside>
+<aside class="sidepanel-white">
+  <a href="#" class="sidepanel-white__link"
+    ><img src="icons/social/facebook-w.svg" alt="facebook_icon"
+  /></a>
+  <a href="#" class="sidepanel-white__link"
+    ><img src="icons/social/instagram-w.svg" alt="instagram_icon"
+  /></a>
+  <a href="#" class="sidepanel-white__link"
+    ><img src="icons/social/github-w.svg" alt="github_icon"
+  /></a>
+  <div class="sidepanel-white__devider"></div>
+  <div class="sidepanel-white__text"><span>Соціальні мережі</span></div>
+  </aside>
 
 <div class="menu">
 <div class="menu__block">
@@ -531,21 +544,48 @@ content="icons/favicon//ms-icon-144x144.png"
     <div class="footer__wrapper">
       <img src="img/main_photo.jpg" alt="main photo" class="footer__photo" />
       <div class="footer__info">
-        <h2 class="title title_fz16 footer__subtitle">Контакти<h2/>
-        <h3 class="title title_fz36 footer__title">Зв'яжитесь зі мною<h3/>
+        <h2 class="title title_fz16 footer__subtitle">Контакти</h2>
+        <h3 class="title title_fz36 footer__title">Зв'яжитесь зі мною</h3>
         <div class="devider"></div>
-        <h4 class="title title_fz14 footer__way">Будь-яким зручним для Вас способом</h4>
+        <div class="footer__way">Будь-яким зручним для Вас способом:</div>
         <div class="footer__social">
           <img src="icons/social/facebook.svg" alt="facebook_icon">
           <img src="icons/social/telegram.svg" alt="telegram_icon">
           <img src="icons/social/instagram.svg" alt="instagram_icon">
           <img src="icons/social/viber.svg" alt="viber_icon">
         </div>
+        <div class="footer__feedback">Або залиште Ваші дані, я сам Вам напишу:</div>
+        <div class="footer__form">
+          <form action="#">
+            <div class="footer__form-head">
+              <fieldset>
+                <legend>Ваше ім'я:</legend>
+                <input type="text" id="name" name="name" required>
+              </fieldset>
+              <fieldset>
+                <legend>Ваша пошта:</legend>
+                <input type="email" id="email" name="email" required>
+              </fieldset>
+            </div>
+            <div class="footer__form-center">
+              <fieldset>
+                <legend>Ваше повідомлення:</legend>
+                <textarea name="message" id="message" rows="6" cols="30" maxlength="463"></textarea>
+              </fieldset>
+            </div>
+            <div class="footer__form-footer">
+              <button class="footer__form-btn">Відправити повідомлення</button>
+              <div class="footer__form-trigger">
+                <input type="checkbox" required>
+                <a href="/policy.html" target="blank" class="footer__form-link"><span>Я згоден(на) з </span>політікою конфеденційности</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </footer>
-<div class="lll"></div>
 <script src="js/script.js"></script>
 </body>
 </html>

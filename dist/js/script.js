@@ -25,7 +25,14 @@ function percents() {
 }
 
 window.addEventListener("scroll", function (e) {
+  const panel = document.querySelector(".sidepanel");
+  console.log(scrollY);
   if (this.scrollY > 2700) {
     percents();
+  }
+  if (this.scrollY > 4000) {
+    panel.classList.add("hide");
+  } else if (this.scrollY < 4000) {
+    panel.classList.remove("hide");
   }
 });
