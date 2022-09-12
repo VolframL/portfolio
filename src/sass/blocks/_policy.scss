@@ -1,0 +1,14 @@
+.policy {
+  &__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  &__text {
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}

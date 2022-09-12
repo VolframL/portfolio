@@ -36,3 +36,23 @@ window.addEventListener("scroll", function (e) {
     panel.classList.remove("hide");
   }
 });
+
+function contacts() {
+  const btn = document.querySelector(".sidepanel-white-btn"),
+    links = document.querySelector(".sidepanel-white"),
+    background = document.querySelector(".promo");
+
+  btn.addEventListener("click", () => {
+    links.style.top = "0px";
+    links.style.opacity = 1;
+    btn.style.top = "-40px";
+  });
+
+  background.addEventListener("click", () => {
+    links.style.top = "-50px";
+    links.style.opacity = 0;
+    btn.style.top = "0px";
+  });
+}
+
+contacts();
