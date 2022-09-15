@@ -13,9 +13,10 @@
 
     &__wrapper {
         padding-left: 65px;
+        padding-right: 40px;
         display: grid;
         grid-template-columns: repeat(2, 425px);
-        column-gap: 135px;
+        justify-content: space-between;
     }
 
     &__column {

@@ -15,14 +15,16 @@
   &__wrapper {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(2, 270px);
-    // grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 8.5px;
     gap: 13px;
 
     li {
       padding: 35px 35px 25px 35px;
       border: 1px solid black;
+      width: 270px;
+      height: 270px;
     }
   }
 
@@ -56,7 +58,7 @@
     &-items {
       list-style-type: none;
       display: grid;
-      grid-template-columns: repeat(3, 350px);
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 70px);
       gap: 45px;
 
