@@ -26,7 +26,7 @@ function percents() {
 
 window.addEventListener("scroll", function (e) {
   const panel = document.querySelector(".sidepanel");
-  console.log(scrollY);
+  // console.log(scrollY);
   if (this.scrollY > 2700) {
     percents();
   }
